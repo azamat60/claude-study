@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r ToolInvocation /Users/azamataltymyshev/Desktop/uigen/node_modules/@ai-sdk/ui-utils/dist/*.d.ts)",
+      "Bash(npx vitest:*)",
+      "Bash(npm audit:*)",
+      "Bash(npm list:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(node -e \"const { useChat } = require\\(''''/Users/azamataltymyshev/Desktop/uigen/node_modules/@ai-sdk/react''''\\); console.log\\(''''exists:'''', typeof useChat\\)\")",
+      "Bash(node -e \"const ai = require\\(''''/Users/azamataltymyshev/Desktop/uigen/node_modules/ai''''\\); console.log\\(Object.keys\\(ai\\).filter\\(k => k.includes\\(''''convert''''\\) || k.includes\\(''''Message''''\\)\\)\\)\")",
+      "Bash(node:*)",
+      "mcp__playwright__browser_install",
+      "Bash(pkill -f \"mcp-chrome-d789889\")",
+      "mcp__playwright",
+      "Bash(cat .env*)"
+    ]
+  }
+}

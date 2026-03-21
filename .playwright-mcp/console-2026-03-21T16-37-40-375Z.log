@@ -1,0 +1,895 @@
+[    7613ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[    7830ms] Error: ./node_modules/@ai-sdk/gateway/dist/index.mjs:1245:1
+Module not found: Can't resolve 'zod'
+  1243 |   zodSchema as zodSchema7
+  1244 | } from "@ai-sdk/provider-utils";
+> 1245 | import { z as z10 } from "zod";
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  1246 | var perplexitySearchInputSchema = lazySchema7(
+  1247 |   () => zodSchema7(
+  1248 |     z10.object({
+
+
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at Error: ./node_modules/ (ai-sdk/gateway/dist/index.mjs:1245:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at Object.getCompilationErrors (file:///Users/azamataltymyshev/Desktop/uigen/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:775:59)
+    at DevBundlerService.getCompilationError (file:///Users/azamataltymyshev/Desktop/uigen/node_modules/next/dist/server/lib/dev-bundler-service.js:39:55)
+    at DevServer.getCompilationError (file:///Users/azamataltymyshev/Desktop/uigen/node_modules/next/dist/server/dev/next-dev-server.js:721:42)
+    at DevServer.findPageComponents (file:///Users/azamataltymyshev/Desktop/uigen/node_modules/next/dist/server/dev/next-dev-server.js:691:43)
+    at async DevServer.renderErrorToResponseImpl (file:///Users/azamataltymyshev/Desktop/uigen/node_modules/next/dist/server/base-server.js:1687:26)
+[    7929ms] [ERROR] ./node_modules/@ai-sdk/gateway/dist/index.mjs:1245:1
+Module not found: Can't resolve 'zod'
+  1243 |   zodSchema as zodSchema7
+  1244 | } from "@ai-sdk/provider-utils";
+> 1245 | import { z as z10 } from "zod";
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  1246 | var perplexitySearchInputSchema = lazySchema7(
+  1247 |   () => zodSchema7(
+  1248 |     z10.object({
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    7929ms] [ERROR] ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs:1134:1
+Module not found: Can't resolve 'zod/v3'
+  1132 |
+  1133 | // src/to-json-schema/zod3-to-json-schema/parsers/record.ts
+> 1134 | import {
+       | ^^^^^^^^
+> 1135 |   ZodFirstPartyTypeKind as ZodFirstPartyTypeKind2
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1136 | } from "zod/v3";
+       | ^^^^^^^^^^^^^^^^^
+  1137 |
+  1138 | // src/to-json-schema/zod3-to-json-schema/parsers/string.ts
+  1139 | var emojiRegex = void 0;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    7929ms] [ERROR] ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs:1134:1
+Module not found: Can't resolve 'zod/v3'
+  1132 |
+  1133 | // src/to-json-schema/zod3-to-json-schema/parsers/record.ts
+> 1134 | import {
+       | ^^^^^^^^
+> 1135 |   ZodFirstPartyTypeKind as ZodFirstPartyTypeKind2
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1136 | } from "zod/v3";
+       | ^^^^^^^^^^^^^^^^^
+  1137 |
+  1138 | // src/to-json-schema/zod3-to-json-schema/parsers/string.ts
+  1139 | var emojiRegex = void 0;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    7929ms] [ERROR] ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs:1134:1
+Module not found: Can't resolve 'zod/v3'
+  1132 |
+  1133 | // src/to-json-schema/zod3-to-json-schema/parsers/record.ts
+> 1134 | import {
+       | ^^^^^^^^
+> 1135 |   ZodFirstPartyTypeKind as ZodFirstPartyTypeKind2
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1136 | } from "zod/v3";
+       | ^^^^^^^^^^^^^^^^^
+  1137 |
+  1138 | // src/to-json-schema/zod3-to-json-schema/parsers/string.ts
+  1139 | var emojiRegex = void 0;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    7929ms] [ERROR] ./node_modules/@ai-sdk/gateway/dist/index.mjs:958:1
+Module not found: Can't resolve 'zod/v4'
+  956 |   resolve as resolve5
+  957 | } from "@ai-sdk/provider-utils";
+> 958 | import { z as z8 } from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  959 | var GatewayVideoModel = class {
+  960 |   constructor(modelId, config) {
+  961 |     this.modelId = modelId;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    7929ms] [ERROR] ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs:873:1
+Module not found: Can't resolve 'zod/v4'
+  871 | // src/schema.ts
+  872 | import { TypeValidationError } from "@ai-sdk/provider";
+> 873 | import * as z4 from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  874 |
+  875 | // src/add-additional-properties-to-json-schema.ts
+  876 | function addAdditionalPropertiesToJsonSchema(jsonSchema2) {
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    7929ms] [ERROR] ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs:873:1
+Module not found: Can't resolve 'zod/v4'
+  871 | // src/schema.ts
+  872 | import { TypeValidationError } from "@ai-sdk/provider";
+> 873 | import * as z4 from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  874 |
+  875 | // src/add-additional-properties-to-json-schema.ts
+  876 | function addAdditionalPropertiesToJsonSchema(jsonSchema2) {
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    7930ms] [ERROR] ./node_modules/ai/dist/index.mjs:8624:1
+Module not found: Can't resolve 'zod/v4'
+  8622 |   zodSchema as zodSchema2
+  8623 | } from "@ai-sdk/provider-utils";
+> 8624 | import { z as z8 } from "zod/v4";
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  8625 | var uiMessagesSchema = lazySchema2(
+  8626 |   () => zodSchema2(
+  8627 |     z8.array(
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    7930ms] [ERROR] ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs:873:1
+Module not found: Can't resolve 'zod/v4'
+  871 | // src/schema.ts
+  872 | import { TypeValidationError } from "@ai-sdk/provider";
+> 873 | import * as z4 from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  874 |
+  875 | // src/add-additional-properties-to-json-schema.ts
+  876 | function addAdditionalPropertiesToJsonSchema(jsonSchema2) {
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    8258ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/favicon.ico:0
+[    8526ms] [ERROR] ./node_modules/@ai-sdk/gateway/dist/index.mjs:1245:1
+Module not found: Can't resolve 'zod'
+  1243 |   zodSchema as zodSchema7
+  1244 | } from "@ai-sdk/provider-utils";
+> 1245 | import { z as z10 } from "zod";
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  1246 | var perplexitySearchInputSchema = lazySchema7(
+  1247 |   () => zodSchema7(
+  1248 |     z10.object({
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    8526ms] [ERROR] ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs:1134:1
+Module not found: Can't resolve 'zod/v3'
+  1132 |
+  1133 | // src/to-json-schema/zod3-to-json-schema/parsers/record.ts
+> 1134 | import {
+       | ^^^^^^^^
+> 1135 |   ZodFirstPartyTypeKind as ZodFirstPartyTypeKind2
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1136 | } from "zod/v3";
+       | ^^^^^^^^^^^^^^^^^
+  1137 |
+  1138 | // src/to-json-schema/zod3-to-json-schema/parsers/string.ts
+  1139 | var emojiRegex = void 0;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    8526ms] [ERROR] ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs:1134:1
+Module not found: Can't resolve 'zod/v3'
+  1132 |
+  1133 | // src/to-json-schema/zod3-to-json-schema/parsers/record.ts
+> 1134 | import {
+       | ^^^^^^^^
+> 1135 |   ZodFirstPartyTypeKind as ZodFirstPartyTypeKind2
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1136 | } from "zod/v3";
+       | ^^^^^^^^^^^^^^^^^
+  1137 |
+  1138 | // src/to-json-schema/zod3-to-json-schema/parsers/string.ts
+  1139 | var emojiRegex = void 0;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    8526ms] [ERROR] ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs:1134:1
+Module not found: Can't resolve 'zod/v3'
+  1132 |
+  1133 | // src/to-json-schema/zod3-to-json-schema/parsers/record.ts
+> 1134 | import {
+       | ^^^^^^^^
+> 1135 |   ZodFirstPartyTypeKind as ZodFirstPartyTypeKind2
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1136 | } from "zod/v3";
+       | ^^^^^^^^^^^^^^^^^
+  1137 |
+  1138 | // src/to-json-schema/zod3-to-json-schema/parsers/string.ts
+  1139 | var emojiRegex = void 0;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    8526ms] [ERROR] ./node_modules/@ai-sdk/gateway/dist/index.mjs:958:1
+Module not found: Can't resolve 'zod/v4'
+  956 |   resolve as resolve5
+  957 | } from "@ai-sdk/provider-utils";
+> 958 | import { z as z8 } from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  959 | var GatewayVideoModel = class {
+  960 |   constructor(modelId, config) {
+  961 |     this.modelId = modelId;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    8526ms] [ERROR] ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs:873:1
+Module not found: Can't resolve 'zod/v4'
+  871 | // src/schema.ts
+  872 | import { TypeValidationError } from "@ai-sdk/provider";
+> 873 | import * as z4 from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  874 |
+  875 | // src/add-additional-properties-to-json-schema.ts
+  876 | function addAdditionalPropertiesToJsonSchema(jsonSchema2) {
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    8526ms] [ERROR] ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs:873:1
+Module not found: Can't resolve 'zod/v4'
+  871 | // src/schema.ts
+  872 | import { TypeValidationError } from "@ai-sdk/provider";
+> 873 | import * as z4 from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  874 |
+  875 | // src/add-additional-properties-to-json-schema.ts
+  876 | function addAdditionalPropertiesToJsonSchema(jsonSchema2) {
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    8526ms] [ERROR] ./node_modules/ai/dist/index.mjs:8624:1
+Module not found: Can't resolve 'zod/v4'
+  8622 |   zodSchema as zodSchema2
+  8623 | } from "@ai-sdk/provider-utils";
+> 8624 | import { z as z8 } from "zod/v4";
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  8625 | var uiMessagesSchema = lazySchema2(
+  8626 |   () => zodSchema2(
+  8627 |     z8.array(
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[    8526ms] [ERROR] ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs:873:1
+Module not found: Can't resolve 'zod/v4'
+  871 | // src/schema.ts
+  872 | import { TypeValidationError } from "@ai-sdk/provider";
+> 873 | import * as z4 from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  874 |
+  875 | // src/add-additional-properties-to-json-schema.ts
+  876 | function addAdditionalPropertiesToJsonSchema(jsonSchema2) {
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[   21159ms] [ERROR] ./node_modules/@ai-sdk/gateway/dist/index.mjs:1245:1
+Module not found: Can't resolve 'zod'
+  1243 |   zodSchema as zodSchema7
+  1244 | } from "@ai-sdk/provider-utils";
+> 1245 | import { z as z10 } from "zod";
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  1246 | var perplexitySearchInputSchema = lazySchema7(
+  1247 |   () => zodSchema7(
+  1248 |     z10.object({
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[   21159ms] [ERROR] ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs:1134:1
+Module not found: Can't resolve 'zod/v3'
+  1132 |
+  1133 | // src/to-json-schema/zod3-to-json-schema/parsers/record.ts
+> 1134 | import {
+       | ^^^^^^^^
+> 1135 |   ZodFirstPartyTypeKind as ZodFirstPartyTypeKind2
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1136 | } from "zod/v3";
+       | ^^^^^^^^^^^^^^^^^
+  1137 |
+  1138 | // src/to-json-schema/zod3-to-json-schema/parsers/string.ts
+  1139 | var emojiRegex = void 0;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[   21159ms] [ERROR] ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs:1134:1
+Module not found: Can't resolve 'zod/v3'
+  1132 |
+  1133 | // src/to-json-schema/zod3-to-json-schema/parsers/record.ts
+> 1134 | import {
+       | ^^^^^^^^
+> 1135 |   ZodFirstPartyTypeKind as ZodFirstPartyTypeKind2
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1136 | } from "zod/v3";
+       | ^^^^^^^^^^^^^^^^^
+  1137 |
+  1138 | // src/to-json-schema/zod3-to-json-schema/parsers/string.ts
+  1139 | var emojiRegex = void 0;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[   21159ms] [ERROR] ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs:1134:1
+Module not found: Can't resolve 'zod/v3'
+  1132 |
+  1133 | // src/to-json-schema/zod3-to-json-schema/parsers/record.ts
+> 1134 | import {
+       | ^^^^^^^^
+> 1135 |   ZodFirstPartyTypeKind as ZodFirstPartyTypeKind2
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1136 | } from "zod/v3";
+       | ^^^^^^^^^^^^^^^^^
+  1137 |
+  1138 | // src/to-json-schema/zod3-to-json-schema/parsers/string.ts
+  1139 | var emojiRegex = void 0;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[   21159ms] [ERROR] ./node_modules/@ai-sdk/gateway/dist/index.mjs:958:1
+Module not found: Can't resolve 'zod/v4'
+  956 |   resolve as resolve5
+  957 | } from "@ai-sdk/provider-utils";
+> 958 | import { z as z8 } from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  959 | var GatewayVideoModel = class {
+  960 |   constructor(modelId, config) {
+  961 |     this.modelId = modelId;
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[   21159ms] [ERROR] ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs:873:1
+Module not found: Can't resolve 'zod/v4'
+  871 | // src/schema.ts
+  872 | import { TypeValidationError } from "@ai-sdk/provider";
+> 873 | import * as z4 from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  874 |
+  875 | // src/add-additional-properties-to-json-schema.ts
+  876 | function addAdditionalPropertiesToJsonSchema(jsonSchema2) {
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component Browser]
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/gateway/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/gateway/dist/index.mjs [Client Component SSR]
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[   21159ms] [ERROR] ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs:873:1
+Module not found: Can't resolve 'zod/v4'
+  871 | // src/schema.ts
+  872 | import { TypeValidationError } from "@ai-sdk/provider";
+> 873 | import * as z4 from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  874 |
+  875 | // src/add-additional-properties-to-json-schema.ts
+  876 | function addAdditionalPropertiesToJsonSchema(jsonSchema2) {
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[   21159ms] [ERROR] ./node_modules/ai/dist/index.mjs:8624:1
+Module not found: Can't resolve 'zod/v4'
+  8622 |   zodSchema as zodSchema2
+  8623 | } from "@ai-sdk/provider-utils";
+> 8624 | import { z as z8 } from "zod/v4";
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  8625 | var uiMessagesSchema = lazySchema2(
+  8626 |   () => zodSchema2(
+  8627 |     z8.array(
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/ai/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/ai/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[   21159ms] [ERROR] ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs:873:1
+Module not found: Can't resolve 'zod/v4'
+  871 | // src/schema.ts
+  872 | import { TypeValidationError } from "@ai-sdk/provider";
+> 873 | import * as z4 from "zod/v4";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  874 |
+  875 | // src/add-additional-properties-to-json-schema.ts
+  876 | function addAdditionalPropertiesToJsonSchema(jsonSchema2) {
+
+Import traces:
+  Client Component Browser:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component Browser]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component Browser]
+    ./src/lib/contexts/chat-context.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Client Component Browser]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.mjs [Client Component SSR]
+    ./node_modules/@ai-sdk/react/dist/index.mjs [Client Component SSR]
+    ./src/lib/contexts/chat-context.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Client Component SSR]
+    ./src/app/main-content.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_5b402162._.js:1747
+[   40129ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_d0aa886c._.js:3918
+[   40134ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__45f039c3._.js:34
+[   40136ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_d0aa886c._.js:2836
+[   41345ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[   41851ms] TypeError: Cannot read properties of undefined (reading 'trim')
+    at MessageInput (http://localhost:3000/_next/static/chunks/src_f84e2812._.js:1413:51)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:13072:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:4091:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:5523:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:6111:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:886:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:8298:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:8190:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:8173:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:7932:56)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:8882:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_5150ccfd._.js:2601:64)
